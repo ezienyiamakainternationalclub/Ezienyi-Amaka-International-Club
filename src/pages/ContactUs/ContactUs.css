@@ -1,0 +1,127 @@
+.contact-page{
+
+padding:140px 0 100px;
+
+background:#f8f9fa;
+
+}
+
+.contact-header{
+
+text-align:center;
+
+margin-bottom:70px;
+
+}
+
+.contact-info{
+
+padding:40px;
+
+border-radius:20px !important;
+
+height:100%;
+
+box-shadow:0 12px 35px rgba(0,0,0,.08) !important;
+
+}
+
+.contact-info h2{
+
+margin-bottom:35px;
+
+color:#0B9B42;
+
+}
+
+.info-item{
+
+display:flex;
+
+align-items:flex-start;
+
+gap:18px;
+
+margin-bottom:35px;
+
+}
+
+.info-item svg{
+
+font-size:24px;
+
+color:#F28A13;
+
+margin-top:6px;
+
+}
+
+.info-item h4{
+
+margin-bottom:8px;
+
+font-size:18px;
+
+}
+
+.info-item p{
+
+line-height:1.8;
+
+color:#666;
+
+}
+
+.contact-form{
+
+padding:40px;
+
+border-radius:20px !important;
+
+box-shadow:0 12px 35px rgba(0,0,0,.08) !important;
+
+}
+
+.contact-form .MuiTextField-root{
+
+margin-bottom:18px;
+
+}
+
+.send-btn{
+
+margin-top:20px !important;
+
+padding:14px 40px !important;
+
+border-radius:40px !important;
+
+font-size:16px !important;
+
+font-weight:700 !important;
+
+text-transform:none !important;
+
+}
+
+@media(max-width:900px){
+
+.contact-page{
+
+padding:120px 20px 80px;
+
+}
+
+.contact-header{
+
+margin-bottom:45px;
+
+}
+
+.contact-info{
+
+margin-bottom:35px;
+
+}
+
+}

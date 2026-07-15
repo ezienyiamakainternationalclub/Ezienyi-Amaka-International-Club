@@ -1,0 +1,57 @@
+.projects{
+
+padding:110px 0;
+
+background:#fafafa;
+
+}
+
+.project-card{
+
+height:100%;
+
+border-radius:18px !important;
+
+transition:.4s;
+
+box-shadow:0 12px 35px rgba(0,0,0,.08) !important;
+
+}
+
+.project-card:hover{
+
+box-shadow:0 20px 50px rgba(0,0,0,.15) !important;
+
+}
+
+.project-icon{
+
+width:75px;
+
+height:75px;
+
+background:#0B9B42;
+
+color:white;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:18px;
+
+font-size:32px;
+
+margin-bottom:25px;
+
+}
+
+.project-card button{
+
+margin-top:20px;
+
+font-weight:700;
+
+}

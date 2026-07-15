@@ -1,0 +1,61 @@
+.mission{
+
+padding:100px 0;
+
+background:#fff;
+
+}
+
+.mission-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:40px;
+
+}
+
+.mission-grid div{
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.mission-grid div:hover{
+
+transform:translateY(-10px);
+
+}
+
+.mission h2{
+
+color:#0B9B42;
+
+margin-bottom:20px;
+
+}
+
+.mission p{
+
+line-height:2;
+
+color:#666;
+
+}
+
+@media(max-width:900px){
+
+.mission-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}

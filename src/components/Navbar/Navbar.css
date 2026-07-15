@@ -1,0 +1,165 @@
+.navbar{
+
+    background:#F28A13 !important;
+
+    transition:.4s;
+
+    padding:12px 0;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.navbar-scrolled{
+
+    background:#F28A13 !important;
+
+    padding:12px 0;
+
+}
+
+.navbar-container{
+
+    width:90%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+.logo-wrapper{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    text-decoration:none;
+
+}
+
+.club-logo{
+
+    width:65px;
+
+    height:65px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+}
+
+.club-name{
+
+    font-size:1.3rem !important;
+
+    font-weight:700 !important;
+
+    color:#0B9B42;
+
+}
+
+.club-subtitle{
+
+    color:#444;
+
+    font-size:.9rem !important;
+
+}
+
+.desktop-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+}
+
+.nav-link{
+
+    text-decoration:none;
+
+    color:#222;
+
+    font-weight:600;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:#0B9B42;
+
+}
+
+.active{
+
+    color:#0B9B42;
+
+}
+
+.active::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:100%;
+
+    height:3px;
+
+    background:#F28A13;
+
+    border-radius:20px;
+
+}
+
+.mobile-menu{
+
+    display:none !important;
+
+}
+
+@media(max-width:900px){
+
+.desktop-menu{
+
+display:none;
+
+}
+
+.mobile-menu{
+
+display:block !important;
+
+}
+
+.club-name{
+
+font-size:1rem !important;
+
+}
+
+.club-logo{
+
+width:55px;
+
+height:55px;
+
+}
+
+}

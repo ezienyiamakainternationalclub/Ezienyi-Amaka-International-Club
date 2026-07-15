@@ -1,0 +1,53 @@
+.executives-section{
+
+padding:100px 0;
+
+background:#f8f9fa;
+
+}
+
+.executive-card{
+
+border-radius:18px !important;
+
+overflow:hidden;
+
+transition:.4s;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08) !important;
+
+}
+
+.executive-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 20px 45px rgba(0,0,0,.15) !important;
+
+}
+
+.executive-image{
+
+height:340px;
+
+object-fit:cover;
+
+}
+
+.executive-card h6{
+
+margin-top:10px;
+
+}
+
+.executive-card p{
+
+font-weight:600;
+
+}
+
+.executives-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:35px;
+}

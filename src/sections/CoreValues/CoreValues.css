@@ -1,0 +1,61 @@
+.core-values{
+
+padding:100px 0;
+
+background:white;
+
+}
+
+.value-card{
+
+padding:40px;
+
+text-align:center;
+
+border-radius:20px !important;
+
+transition:.4s;
+
+height:100%;
+
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.value-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.value-icon{
+
+width:80px;
+
+height:80px;
+
+margin:auto;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:#0B9B42;
+
+color:white;
+
+border-radius:50%;
+
+margin-bottom:25px;
+
+}
+
+.value-card h6{
+
+margin-bottom:15px;
+
+}

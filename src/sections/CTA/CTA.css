@@ -1,0 +1,69 @@
+.cta{
+
+padding:120px 20px;
+
+background:linear-gradient(135deg,#0B9B42,#09763B);
+
+text-align:center;
+
+color:white;
+
+}
+
+.cta h2{
+
+font-size:3rem;
+
+font-weight:800;
+
+margin-bottom:20px;
+
+}
+
+.cta p{
+
+font-size:1.15rem;
+
+line-height:2;
+
+max-width:800px;
+
+margin:auto;
+
+margin-bottom:45px;
+
+opacity:.95;
+
+}
+
+.cta-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.cta .MuiButton-root{
+
+border-radius:35px;
+
+padding:14px 34px;
+
+font-weight:700;
+
+}
+
+@media(max-width:768px){
+
+.cta h2{
+
+font-size:2.2rem;
+
+}
+
+}
