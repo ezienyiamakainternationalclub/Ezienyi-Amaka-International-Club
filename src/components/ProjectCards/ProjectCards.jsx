@@ -61,9 +61,7 @@ const projects = [
 export default function ProjectCards() {
   return (
     <section className="projects">
-
       <Container maxWidth="lg">
-
         <Typography
           variant="h3"
           align="center"
@@ -84,24 +82,19 @@ export default function ProjectCards() {
         </Typography>
 
         <Grid container spacing={4}>
-
           {projects.map((project, index) => (
-
-            <Grid item xs={12} md={4} key={index}>
-
+            <Grid
+              key={index}
+              size={{ xs: 12, md: 4 }}
+            >
               <motion.div
                 whileHover={{ y: -10 }}
-                transition={{ duration: .3 }}
+                transition={{ duration: 0.3 }}
               >
-
                 <Card className="project-card">
-
                   <CardContent>
-
                     <div className="project-icon">
-
                       {project.icon}
-
                     </div>
 
                     <Typography
@@ -112,9 +105,7 @@ export default function ProjectCards() {
                       {project.title}
                     </Typography>
 
-                    <Typography
-                      color="text.secondary"
-                    >
+                    <Typography color="text.secondary">
                       {project.description}
                     </Typography>
 
@@ -130,21 +121,13 @@ export default function ProjectCards() {
                     >
                       Learn More
                     </Button>
-
                   </CardContent>
-
                 </Card>
-
               </motion.div>
-
             </Grid>
-
           ))}
-
         </Grid>
-
       </Container>
-
     </section>
   );
 }

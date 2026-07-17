@@ -18,7 +18,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link, useLocation } from "react-router-dom";
 
-import logo from "../../assets/Ezienyiamakainternationalclub-logo.jpg";
+import logo from "../../assets/Ezienyiamakainternationalclub-logo.webp";
 
 const navLinks = [
   { name: "Home", path: "/" },

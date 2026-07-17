@@ -14,18 +14,14 @@ import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
-import members from "../../assets/members-group-pic.jpg";
+import members from "../../assets/members-group-pic.webp";
 
 export default function AboutUs() {
   return (
     <>
-
       {/* HERO */}
-
       <section className="about-hero">
-
         <Container>
-
           <Typography
             variant="h2"
             fontWeight={800}
@@ -35,22 +31,16 @@ export default function AboutUs() {
           </Typography>
 
           <Typography className="about-hero-text">
-
             Ezienyi Amaka International Club is a distinguished
             organization built on friendship, unity,
             leadership, cultural heritage and community
             development.
-
           </Typography>
-
         </Container>
-
       </section>
 
       {/* STORY */}
-
       <section className="about-story">
-
         <Container maxWidth="lg">
 
           <Grid
@@ -59,18 +49,19 @@ export default function AboutUs() {
             alignItems="center"
           >
 
-            <Grid item md={6} xs={12}>
-
+            <Grid
+              size={{ xs: 12, md: 6 }}
+            >
               <img
                 src={members}
                 alt="Members"
                 className="about-image"
               />
-
             </Grid>
 
-            <Grid item md={6} xs={12}>
-
+            <Grid
+              size={{ xs: 12, md: 6 }}
+            >
               <Typography
                 variant="h3"
                 color="primary"
@@ -80,24 +71,20 @@ export default function AboutUs() {
               </Typography>
 
               <Typography paragraph>
-
                 Ezienyi Amaka International Club was
                 established with a vision of bringing
                 together individuals who share common
                 values of brotherhood, integrity,
                 community development and cultural pride.
-
               </Typography>
 
               <Typography paragraph>
-
                 Over the years, the club has continued
                 to grow, creating meaningful impact
                 through humanitarian activities,
                 educational support, social welfare,
                 youth empowerment and international
                 collaboration.
-
               </Typography>
 
               <Button
@@ -107,30 +94,27 @@ export default function AboutUs() {
               >
                 Join Our Mission
               </Button>
-
             </Grid>
 
           </Grid>
 
         </Container>
-
       </section>
 
       {/* MISSION */}
-
       <section className="mission-section">
-
         <Container>
 
           <Grid container spacing={4}>
 
-            <Grid item xs={12} md={6}>
-
+            <Grid
+              size={{ xs: 12, md: 6 }}
+            >
               <Paper className="mission-card">
 
                 <PublicIcon
                   color="success"
-                  sx={{ fontSize:60 }}
+                  sx={{ fontSize: 60 }}
                 />
 
                 <Typography
@@ -141,25 +125,23 @@ export default function AboutUs() {
                 </Typography>
 
                 <Typography>
-
                   To become one of Africa's leading
                   international clubs promoting
                   excellence, unity, cultural heritage,
                   leadership and humanitarian service.
-
                 </Typography>
 
               </Paper>
-
             </Grid>
 
-            <Grid item xs={12} md={6}>
-
+            <Grid
+              size={{ xs: 12, md: 6 }}
+            >
               <Paper className="mission-card">
 
                 <VolunteerActivismIcon
                   color="warning"
-                  sx={{ fontSize:60 }}
+                  sx={{ fontSize: 60 }}
                 />
 
                 <Typography
@@ -170,28 +152,22 @@ export default function AboutUs() {
                 </Typography>
 
                 <Typography>
-
                   To inspire members to contribute
                   positively to society while fostering
                   friendship, integrity, development
                   and lifelong service.
-
                 </Typography>
 
               </Paper>
-
             </Grid>
 
           </Grid>
 
         </Container>
-
       </section>
 
       {/* OBJECTIVES */}
-
       <section className="objectives">
-
         <Container>
 
           <Typography
@@ -205,116 +181,97 @@ export default function AboutUs() {
 
           <Grid container spacing={4}>
 
-            <Grid item md={3} sm={6} xs={12}>
-
+            <Grid
+              size={{ xs: 12, sm: 6, md: 3 }}
+            >
               <Paper className="objective-card">
 
                 <GroupsIcon
-                  sx={{ fontSize:55 }}
+                  sx={{ fontSize: 55 }}
                   color="success"
                 />
 
                 <Typography variant="h6">
-
                   Brotherhood
-
                 </Typography>
 
                 <Typography>
-
                   Strengthen relationships among members.
-
                 </Typography>
 
               </Paper>
-
             </Grid>
 
-            <Grid item md={3} sm={6} xs={12}>
-
+            <Grid
+              size={{ xs: 12, sm: 6, md: 3 }}
+            >
               <Paper className="objective-card">
 
                 <VolunteerActivismIcon
-                  sx={{ fontSize:55 }}
+                  sx={{ fontSize: 55 }}
                   color="warning"
                 />
 
                 <Typography variant="h6">
-
                   Community Service
-
                 </Typography>
 
                 <Typography>
-
                   Improve lives through impactful projects.
-
                 </Typography>
 
               </Paper>
-
             </Grid>
 
-            <Grid item md={3} sm={6} xs={12}>
-
+            <Grid
+              size={{ xs: 12, sm: 6, md: 3 }}
+            >
               <Paper className="objective-card">
 
                 <WorkspacePremiumIcon
-                  sx={{ fontSize:55 }}
+                  sx={{ fontSize: 55 }}
                   color="primary"
                 />
 
                 <Typography variant="h6">
-
                   Excellence
-
                 </Typography>
 
                 <Typography>
-
                   Promote professionalism and integrity.
-
                 </Typography>
 
               </Paper>
-
             </Grid>
 
-            <Grid item md={3} sm={6} xs={12}>
-
+            <Grid
+              size={{ xs: 12, sm: 6, md: 3 }}
+            >
               <Paper className="objective-card">
 
                 <PublicIcon
-                  sx={{ fontSize:55 }}
+                  sx={{ fontSize: 55 }}
                   color="error"
                 />
 
                 <Typography variant="h6">
-
                   Global Unity
-
                 </Typography>
 
                 <Typography>
-
                   Connecting members worldwide.
-
                 </Typography>
 
               </Paper>
-
             </Grid>
 
           </Grid>
 
         </Container>
-
       </section>
 
       {/* WHY JOIN */}
-
       <section className="why-join">
-
         <Container maxWidth="md">
 
           <Typography
@@ -327,25 +284,16 @@ export default function AboutUs() {
           </Typography>
 
           <ul className="why-list">
-
             <li>✔ Lifelong friendships and networking.</li>
-
             <li>✔ Leadership development opportunities.</li>
-
             <li>✔ Community development projects.</li>
-
             <li>✔ Welfare and member support.</li>
-
             <li>✔ Cultural preservation and promotion.</li>
-
             <li>✔ International collaboration.</li>
-
           </ul>
 
         </Container>
-
       </section>
-
     </>
   );
 }

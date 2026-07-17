@@ -12,13 +12,13 @@ import {
 
 import CloseIcon from "@mui/icons-material/Close";
 
-import group from "../../assets/members-group-pic.jpg";
-import chairman from "../../assets/chairman.jpg";
-import viceChairman from "../../assets/vice-chairman.jpg";
-import secretary from "../../assets/secretary.jpg";
-import financialSecretary from "../../assets/financial-secretary.jpg";
-import treasurer from "../../assets/treasurer.jpg";
-import welfareChairman from "../../assets/welfare-chairman.jpg";
+import group from "../../assets/members-group-pic.webp";
+import chairman from "../../assets/chairman.webp";
+import viceChairman from "../../assets/vice-chairman.webp";
+import secretary from "../../assets/secretary.webp";
+import financialSecretary from "../../assets/financial-secretary.webp";
+import treasurer from "../../assets/treasurer.webp";
+import welfareChairman from "../../assets/welfare-chairman.webp";
 
 const images = [
   {

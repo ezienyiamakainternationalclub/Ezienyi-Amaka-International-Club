@@ -8,16 +8,16 @@ import {
   Typography,
 } from "@mui/material";
 
-import chairman from "../../assets/chairman.jpg";
-import viceChairman from "../../assets/vice-chairman.jpg";
-import secretary from "../../assets/secretary.jpg";
-import financialSecretary from "../../assets/financial-secretary.jpg";
-import treasurer from "../../assets/treasurer.jpg";
-import welfareChairman from "../../assets/welfare-chairman.jpg";
+import chairman from "../../assets/chairman.webp";
+import viceChairman from "../../assets/vice-chairman.webp";
+import secretary from "../../assets/secretary.webp";
+import financialSecretary from "../../assets/financial-secretary.webp";
+import treasurer from "../../assets/treasurer.webp";
+import welfareChairman from "../../assets/welfare-chairman.webp";
 
 const executives = [
   {
-    name: "Chief Ebenezer",
+    name: "Chief Chairman",
     position: "Chairman",
     image: chairman,
   },
