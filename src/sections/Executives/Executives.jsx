@@ -1,6 +1,12 @@
 import "./Executives.css";
 
-import { Card, CardContent, CardMedia, Container, Typography } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  Container,
+  Typography,
+} from "@mui/material";
 
 import chairman from "../../assets/chairman.jpg";
 import viceChairman from "../../assets/vice-chairman.jpg";
@@ -46,21 +52,20 @@ export default function Executives() {
   return (
     <section className="executives-section">
 
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
 
-        <Typography
-          variant="h3"
-          align="center"
-          fontWeight="bold"
-          gutterBottom
-          color="primary"
-        >
-          Our Executives
-        </Typography>
+        <div className="section-title">
 
-        <Typography align="center" sx={{ mb: 6 }}>
-          Dedicated leaders committed to service, unity and excellence.
-        </Typography>
+          <span>Leadership Team</span>
+
+          <h2>Meet Our Executives</h2>
+
+          <p>
+            Our executives are dedicated leaders committed to unity,
+            integrity, service and community development across the world.
+          </p>
+
+        </div>
 
         <div className="executives-grid">
 
@@ -71,26 +76,28 @@ export default function Executives() {
               key={leader.position}
             >
 
-              <CardMedia
-                component="img"
-                image={leader.image}
-                alt={leader.position}
-                className="executive-image"
-              />
+              <div className="image-wrapper">
 
-              <CardContent>
+                <CardMedia
+                  component="img"
+                  image={leader.image}
+                  alt={leader.position}
+                  className="executive-image"
+                />
+
+              </div>
+
+              <CardContent className="executive-content">
 
                 <Typography
-                  variant="h6"
-                  align="center"
-                  fontWeight="bold"
+                  variant="h5"
+                  className="executive-name"
                 >
                   {leader.name}
                 </Typography>
 
                 <Typography
-                  align="center"
-                  color="primary"
+                  className="executive-position"
                 >
                   {leader.position}
                 </Typography>

@@ -1,5 +1,11 @@
 import "./BecomeMember.css";
 
+import countries from "../Countries/countries";
+import {
+  Checkbox,
+  FormControlLabel,
+} from "@mui/material";
+
 import {
   Container,
   TextField,
@@ -33,68 +39,218 @@ export default function BecomeMember() {
             Complete the form below and one of our executives will contact you.
           </Typography>
 
-          <div className="form-grid">
+        <div className="form-grid">
 
-            <TextField
-              fullWidth
-              label="First Name"
-            />
+  <TextField
+    fullWidth
+    label="First Name"
+    required
+  />
 
-            <TextField
-              fullWidth
-              label="Last Name"
-            />
+  <TextField
+    fullWidth
+    label="Middle Name"
+  />
 
-            <TextField
-              fullWidth
-              label="Phone Number"
-            />
+  <TextField
+    fullWidth
+    label="Last Name"
+    required
+  />
 
-            <TextField
-              fullWidth
-              label="Email Address"
-            />
+  <TextField
+    fullWidth
+    label="Email Address"
+    type="email"
+    required
+  />
 
-            <TextField
-              fullWidth
-              select
-              label="Country"
-              defaultValue=""
-              className="full-width"
-            >
-              <MenuItem value="Nigeria">Nigeria</MenuItem>
-              <MenuItem value="Ghana">Ghana</MenuItem>
-              <MenuItem value="United Kingdom">United Kingdom</MenuItem>
-              <MenuItem value="United States">United States</MenuItem>
-              <MenuItem value="Canada">Canada</MenuItem>
-              <MenuItem value="Other">Other</MenuItem>
-            </TextField>
+  <TextField
+    fullWidth
+    label="Phone Number"
+    required
+  />
 
-            <TextField
-              fullWidth
-              label="Residential Address"
-              className="full-width"
-            />
+  <TextField
+    fullWidth
+    type="date"
+    label="Date of Birth"
+    InputLabelProps={{ shrink: true }}
+  />
 
-            <TextField
-              fullWidth
-              multiline
-              rows={5}
-              label="Why do you want to join the Club?"
-              className="full-width"
-            />
+  <TextField
+    select
+    fullWidth
+    label="Gender"
+    defaultValue=""
+  >
+    <MenuItem value="Male">Male</MenuItem>
+    <MenuItem value="Female">Female</MenuItem>
+  </TextField>
 
-            <Button
-              fullWidth
-              variant="contained"
-              color="success"
-              size="large"
-              className="full-width"
-            >
-              Submit Membership Application
-            </Button>
+  <TextField
+    select
+    fullWidth
+    label="Marital Status"
+    defaultValue=""
+  >
+    <MenuItem value="Single">Single</MenuItem>
+    <MenuItem value="Married">Married</MenuItem>
+    <MenuItem value="Divorced">Divorced</MenuItem>
+    <MenuItem value="Widowed">Widowed</MenuItem>
+  </TextField>
 
-          </div>
+  <TextField
+    select
+    fullWidth
+    label="Country"
+    defaultValue=""
+  >
+    {countries.map((country) => (
+      <MenuItem
+        key={country}
+        value={country}
+      >
+        {country}
+      </MenuItem>
+    ))}
+  </TextField>
+
+  <TextField
+    fullWidth
+    label="State of Origin"
+  />
+
+  <TextField
+    fullWidth
+    label="L.G.A."
+  />
+
+  <TextField
+    fullWidth
+    label="Occupation"
+  />
+
+  <TextField
+    fullWidth
+    label="Residential Address"
+    className="full-width"
+  />
+
+  <TextField
+    fullWidth
+    label="Office Address"
+    className="full-width"
+  />
+
+  <TextField
+    select
+    fullWidth
+    label="Blood Group"
+    defaultValue=""
+  >
+    <MenuItem value="A+">A+</MenuItem>
+    <MenuItem value="A-">A-</MenuItem>
+    <MenuItem value="B+">B+</MenuItem>
+    <MenuItem value="B-">B-</MenuItem>
+    <MenuItem value="AB+">AB+</MenuItem>
+    <MenuItem value="AB-">AB-</MenuItem>
+    <MenuItem value="O+">O+</MenuItem>
+    <MenuItem value="O-">O-</MenuItem>
+    <MenuItem value="Unknown">Unknown</MenuItem>
+  </TextField>
+
+  <TextField
+    select
+    fullWidth
+    label="Genotype"
+    defaultValue=""
+  >
+    <MenuItem value="AA">AA</MenuItem>
+    <MenuItem value="AS">AS</MenuItem>
+    <MenuItem value="AC">AC</MenuItem>
+    <MenuItem value="SS">SS</MenuItem>
+    <MenuItem value="SC">SC</MenuItem>
+    <MenuItem value="CC">CC</MenuItem>
+    <MenuItem value="Unknown">Unknown</MenuItem>
+  </TextField>
+
+  <TextField
+    fullWidth
+    label="Next of Kin"
+  />
+
+  <TextField
+    fullWidth
+    label="Relationship"
+  />
+
+  <TextField
+    fullWidth
+    label="Next of Kin Phone Number"
+  />
+
+  <TextField
+    fullWidth
+    multiline
+    rows={4}
+    label="Why do you want to join Ezienyi Amaka International Club?"
+    className="full-width"
+  />
+
+  <TextField
+    fullWidth
+    multiline
+    rows={4}
+    label="What would you like the Executive Committee to Add, Remove or Improve?"
+    className="full-width"
+  />
+
+  <Typography
+    className="full-width"
+    sx={{
+      mt:2,
+      fontWeight:600,
+      lineHeight:1.8
+    }}
+  >
+    I hereby declare that the information supplied above is true and
+    correct. I agree to abide by the constitution, rules and regulations
+    of Ezienyi Amaka International Club and to support the objectives,
+    unity and growth of the Club.
+  </Typography>
+
+  <FormControlLabel
+    className="full-width"
+    control={<Checkbox color="success" />}
+    label="I have read and agree to the declaration above."
+  />
+
+  <TextField
+    fullWidth
+    label="Signature (Type your Full Name)"
+  />
+
+  <TextField
+    fullWidth
+    type="date"
+    label="Date"
+    InputLabelProps={{
+      shrink:true
+    }}
+  />
+
+  <Button
+    fullWidth
+    variant="contained"
+    color="success"
+    size="large"
+    className="full-width"
+  >
+    Submit Membership Application
+  </Button>
+
+</div>
 
         </Paper>
       </Container>

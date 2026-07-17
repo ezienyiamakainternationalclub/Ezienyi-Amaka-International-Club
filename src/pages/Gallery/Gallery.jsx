@@ -59,7 +59,7 @@ export default function Gallery() {
       <section className="gallery-header">
         <Container>
           <Typography variant="h2" fontWeight={800}>
-            Gallery
+            Members
           </Typography>
 
           <Typography className="gallery-subtitle">

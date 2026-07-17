@@ -1,53 +1,189 @@
 .executives-section{
 
-padding:100px 0;
+padding:110px 20px;
 
-background:#f8f9fa;
+background:linear-gradient(180deg,#f9fbfc,#ffffff);
+
+}
+
+.section-title{
+
+text-align:center;
+
+max-width:850px;
+
+margin:auto;
+
+margin-bottom:70px;
+
+}
+
+.section-title span{
+
+display:inline-block;
+
+padding:10px 22px;
+
+border-radius:40px;
+
+background:#e7f8ed;
+
+color:#0B9B42;
+
+font-weight:700;
+
+margin-bottom:18px;
+
+}
+
+.section-title h2{
+
+font-size:3rem;
+
+margin-bottom:20px;
+
+font-weight:800;
+
+color:#222;
+
+}
+
+.section-title p{
+
+font-size:1.08rem;
+
+line-height:1.9;
+
+color:#666;
+
+}
+
+.executives-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
 
 }
 
 .executive-card{
 
-border-radius:18px !important;
+border-radius:24px !important;
 
 overflow:hidden;
 
-transition:.4s;
+background:white !important;
 
-box-shadow:0 10px 30px rgba(0,0,0,.08) !important;
+transition:.45s;
+
+box-shadow:0 10px 35px rgba(0,0,0,.08) !important;
 
 }
 
 .executive-card:hover{
 
-transform:translateY(-12px);
+transform:translateY(-14px);
 
-box-shadow:0 20px 45px rgba(0,0,0,.15) !important;
+box-shadow:0 25px 55px rgba(0,0,0,.15) !important;
+
+}
+
+.image-wrapper{
+
+padding:25px 25px 0;
+
+background:white;
 
 }
 
 .executive-image{
 
-height:340px;
+width:100%;
 
-object-fit:cover;
+height:430px;
+
+object-fit:contain;
+
+background:#f7f7f7;
+
+border-radius:18px;
 
 }
 
-.executive-card h6{
+.executive-content{
 
-margin-top:10px;
+padding:30px !important;
+
+text-align:center;
 
 }
 
-.executive-card p{
+.executive-name{
 
-font-weight:600;
+font-weight:800 !important;
+
+font-size:1.45rem !important;
+
+margin-bottom:12px !important;
+
+color:#222;
+
+}
+
+.executive-position{
+
+display:inline-block;
+
+padding:9px 20px;
+
+border-radius:30px;
+
+background:#0B9B42;
+
+color:white !important;
+
+font-weight:700 !important;
+
+font-size:.95rem;
+
+letter-spacing:.5px;
+
+}
+
+@media(max-width:900px){
+
+.executives-section{
+
+padding:80px 18px;
+
+}
+
+.section-title h2{
+
+font-size:2.2rem;
+
+}
+
+.section-title p{
+
+font-size:1rem;
 
 }
 
 .executives-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:35px;
+
+grid-template-columns:1fr;
+
+gap:30px;
+
+}
+
+.executive-image{
+
+height:380px;
+
+}
+
 }
