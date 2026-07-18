@@ -1,0 +1,415 @@
+/* ==========================================
+   HERO
+========================================== */
+
+.constitution-hero{
+    padding:170px 20px 120px;
+    background:linear-gradient(135deg,#0B9B42,#087132);
+    color:#fff;
+    text-align:center;
+}
+
+.constitution-hero h2{
+    font-size:3.8rem;
+    line-height:1.2;
+    margin-bottom:25px;
+    font-weight:800;
+}
+
+.constitution-subtitle{
+    max-width:900px;
+    margin:auto;
+    font-size:1.18rem;
+    line-height:2;
+    opacity:.95;
+}
+
+/* ==========================================
+   GENERAL SECTIONS
+========================================== */
+
+.constitution-section{
+    padding:100px 20px;
+}
+
+.grey-bg{
+    background:#f8f9fa;
+}
+
+.section-intro{
+    max-width:850px;
+    margin:0 auto 40px;
+    color:#666;
+    line-height:1.9;
+    font-size:1.08rem;
+}
+
+/* ==========================================
+   MAIN CONSTITUTION CARD
+========================================== */
+
+.constitution-card{
+    padding:50px;
+    border-radius:22px !important;
+    box-shadow:0 10px 35px rgba(0,0,0,.08) !important;
+}
+
+.constitution-card p{
+    line-height:2;
+    color:#555;
+    font-size:1.05rem;
+}
+
+/* ==========================================
+   INFO CARDS
+========================================== */
+
+.info-card{
+    padding:40px;
+    text-align:center;
+    border-radius:22px !important;
+    height:100%;
+    transition:.35s;
+}
+
+.info-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+}
+
+.info-card h5{
+    font-weight:700;
+}
+
+.info-card p{
+    line-height:1.9;
+    color:#666;
+}
+
+/* ==========================================
+   VISION & MISSION
+========================================== */
+
+.vision-card{
+    padding:50px;
+    text-align:center;
+    border-radius:22px !important;
+    height:100%;
+    transition:.35s;
+}
+
+.vision-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+}
+
+.vision-card h4{
+    font-weight:700;
+}
+
+.vision-card p{
+    line-height:2;
+    color:#666;
+}
+
+/* ==========================================
+   OBJECTIVE CARDS
+========================================== */
+
+.objective-card{
+    padding:35px;
+    border-radius:18px !important;
+    height:100%;
+    transition:.35s;
+    border-left:6px solid #0B9B42;
+}
+
+.objective-card:hover{
+    background:#0B9B42;
+    color:#fff;
+    transform:translateY(-8px);
+}
+
+.objective-card:hover p,
+.objective-card:hover h6{
+    color:#fff;
+}
+
+.objective-card h6{
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.objective-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+/* ==========================================
+   GOVERNING COUNCIL
+========================================== */
+
+.office-card{
+    padding:35px;
+    text-align:center;
+    border-radius:18px !important;
+    height:100%;
+    transition:.35s;
+}
+
+.office-card:hover{
+    transform:translateY(-8px);
+    background:#F28A13;
+    color:#fff;
+}
+
+.office-card:hover svg{
+    color:#fff;
+}
+
+.office-card h6{
+    font-weight:700;
+}
+
+/* ==========================================
+   LISTS
+========================================== */
+
+.constitution-list{
+    margin-top:20px;
+    padding-left:25px;
+}
+
+.constitution-list li{
+    margin-bottom:18px;
+    line-height:1.9;
+    color:#555;
+}
+
+/* ==========================================
+   FOOTER NOTE
+========================================== */
+
+.constitution-footer{
+    background:#0B9B42;
+    color:#fff;
+    padding:80px 20px;
+}
+
+.constitution-footer p{
+    max-width:850px;
+    margin:auto;
+    line-height:2;
+}
+
+/* ==========================================
+   DIVIDERS
+========================================== */
+
+.constitution-card hr,
+.constitution-section hr{
+    border:none;
+    border-top:1px solid #e6e6e6;
+    margin:30px 0;
+}
+
+/* ==========================================
+   LINKS (Future Proof)
+========================================== */
+
+.constitution-section a{
+    color:#0B9B42;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.constitution-section a:hover{
+    color:#087132;
+    text-decoration:underline;
+}
+
+/* ==========================================
+   ICON SPACING
+========================================== */
+
+.info-card svg,
+.vision-card svg,
+.office-card svg{
+    margin-bottom:10px;
+}
+
+/* ==========================================
+   SMOOTH TRANSITIONS
+========================================== */
+
+.constitution-card,
+.info-card,
+.vision-card,
+.objective-card,
+.office-card{
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        background .35s ease,
+        color .35s ease;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:900px){
+
+.constitution-hero{
+    padding:145px 20px 95px;
+}
+
+.constitution-hero h2{
+    font-size:2.8rem;
+}
+
+.constitution-subtitle{
+    font-size:1.05rem;
+    line-height:1.8;
+}
+
+.constitution-section{
+    padding:80px 20px;
+}
+
+.constitution-card{
+    padding:35px;
+}
+
+.info-card,
+.vision-card,
+.objective-card,
+.office-card{
+    padding:30px;
+}
+
+.section-intro{
+    font-size:1rem;
+}
+
+.constitution-list li{
+    font-size:.98rem;
+}
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:600px){
+
+.constitution-hero{
+    padding:130px 18px 80px;
+}
+
+.constitution-hero h2{
+    font-size:2.1rem;
+    line-height:1.3;
+}
+
+.constitution-subtitle{
+    font-size:.98rem;
+    line-height:1.8;
+}
+
+.constitution-section{
+    padding:65px 16px;
+}
+
+.constitution-card{
+    padding:25px;
+    border-radius:18px !important;
+}
+
+.info-card,
+.vision-card,
+.objective-card,
+.office-card{
+    padding:24px;
+    border-radius:18px !important;
+}
+
+.constitution-card h3{
+    font-size:1.8rem;
+}
+
+.vision-card h4{
+    font-size:1.5rem;
+}
+
+.info-card h5{
+    font-size:1.25rem;
+}
+
+.office-card h6{
+    font-size:1.05rem;
+}
+
+.constitution-card p,
+.info-card p,
+.vision-card p,
+.objective-card p{
+    font-size:.96rem;
+    line-height:1.8;
+}
+
+.constitution-list{
+    padding-left:20px;
+}
+
+.constitution-list li{
+    margin-bottom:14px;
+    font-size:.95rem;
+}
+
+.constitution-footer{
+    padding:60px 18px;
+}
+
+.constitution-footer p{
+    font-size:.95rem;
+    line-height:1.8;
+}
+
+}
+
+/* ==========================================
+   LARGE DESKTOPS
+========================================== */
+
+@media (min-width:1400px){
+
+.constitution-hero h2{
+    font-size:4.3rem;
+}
+
+.constitution-subtitle{
+    font-size:1.25rem;
+}
+
+.constitution-card{
+    padding:60px;
+}
+
+.info-card,
+.vision-card{
+    padding:50px;
+}
+
+}
+
+/* ==========================================
+   TEXT SELECTION
+========================================== */
+
+::selection{
+    background:#0B9B42;
+    color:#fff;
+}

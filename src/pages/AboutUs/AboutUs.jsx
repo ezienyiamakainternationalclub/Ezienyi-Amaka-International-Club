@@ -14,7 +14,9 @@ import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
-import members from "../../assets/members-group-pic.webp";
+import { Link } from "react-router-dom";
+
+import members from "../../assets/cross-section-of-members.webp";
 
 export default function AboutUs() {
   return (
@@ -31,15 +33,16 @@ export default function AboutUs() {
           </Typography>
 
           <Typography className="about-hero-text">
-            Ezienyi Amaka International Club is a distinguished
-            organization built on friendship, unity,
-            leadership, cultural heritage and community
-            development.
+            Ezienyi Amaka International Club is a respected social
+            organization founded by like-minded friends who united
+            under one body to promote peace, brotherhood, unity,
+            philanthropy, recreation and meaningful social impact
+            within Nigeria and beyond.
           </Typography>
         </Container>
       </section>
 
-      {/* STORY */}
+      {/* OUR STORY */}
       <section className="about-story">
         <Container maxWidth="lg">
 
@@ -49,19 +52,16 @@ export default function AboutUs() {
             alignItems="center"
           >
 
-            <Grid
-              size={{ xs: 12, md: 6 }}
-            >
+            <Grid size={{ xs: 12, md: 6 }}>
               <img
                 src={members}
-                alt="Members"
+                alt="Club Members"
                 className="about-image"
               />
             </Grid>
 
-            <Grid
-              size={{ xs: 12, md: 6 }}
-            >
+            <Grid size={{ xs: 12, md: 6 }}>
+
               <Typography
                 variant="h3"
                 color="primary"
@@ -71,29 +71,40 @@ export default function AboutUs() {
               </Typography>
 
               <Typography paragraph>
-                Ezienyi Amaka International Club was
-                established with a vision of bringing
-                together individuals who share common
-                values of brotherhood, integrity,
-                community development and cultural pride.
+                Ezienyi Amaka International Club was founded by a
+                group of like-minded friends who resolved to come
+                together under one organization to pursue peace,
+                unity, brotherhood and the common good while
+                positively impacting society through responsible
+                leadership, philanthropy and service.
               </Typography>
 
               <Typography paragraph>
-                Over the years, the club has continued
-                to grow, creating meaningful impact
-                through humanitarian activities,
-                educational support, social welfare,
-                youth empowerment and international
-                collaboration.
+                Today, the Club continues to strengthen friendship
+                among members while advancing philanthropy,
+                recreation, professional networking, community
+                development, capacity building and the preservation
+                of our rich cultural heritage.
+              </Typography>
+
+              <Typography paragraph>
+                We remain committed to inspiring meaningful social
+                impact by partnering with accomplished individuals
+                from diverse professions and backgrounds while
+                promoting welfare, integrity, excellence and
+                lifelong friendship among members.
               </Typography>
 
               <Button
+                component={Link}
+                to="/becomemember"
                 variant="contained"
                 color="success"
                 endIcon={<ArrowForwardIcon />}
               >
                 Join Our Mission
               </Button>
+
             </Grid>
 
           </Grid>
@@ -101,15 +112,14 @@ export default function AboutUs() {
         </Container>
       </section>
 
-      {/* MISSION */}
+      {/* VISION & MISSION */}
       <section className="mission-section">
         <Container>
 
           <Grid container spacing={4}>
 
-            <Grid
-              size={{ xs: 12, md: 6 }}
-            >
+            <Grid size={{ xs: 12, md: 6 }}>
+
               <Paper className="mission-card">
 
                 <PublicIcon
@@ -125,18 +135,19 @@ export default function AboutUs() {
                 </Typography>
 
                 <Typography>
-                  To become one of Africa's leading
-                  international clubs promoting
-                  excellence, unity, cultural heritage,
-                  leadership and humanitarian service.
+                  We exist to inspire a difference and refinement
+                  in the perception of social clubs by advancing
+                  and fostering meaningful social impact through
+                  partnerships with accomplished personalities
+                  from diverse backgrounds and professions.
                 </Typography>
 
               </Paper>
+
             </Grid>
 
-            <Grid
-              size={{ xs: 12, md: 6 }}
-            >
+            <Grid size={{ xs: 12, md: 6 }}>
+
               <Paper className="mission-card">
 
                 <VolunteerActivismIcon
@@ -152,13 +163,15 @@ export default function AboutUs() {
                 </Typography>
 
                 <Typography>
-                  To inspire members to contribute
-                  positively to society while fostering
-                  friendship, integrity, development
-                  and lifelong service.
+                  At Ezienyi Amaka International Club, we champion
+                  the welfare of members and give more meaning to
+                  life through well-defined philanthropy,
+                  recreation, social activities, community
+                  development and responsible leadership.
                 </Typography>
 
               </Paper>
+
             </Grid>
 
           </Grid>
@@ -181,9 +194,8 @@ export default function AboutUs() {
 
           <Grid container spacing={4}>
 
-            <Grid
-              size={{ xs: 12, sm: 6, md: 3 }}
-            >
+            <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+
               <Paper className="objective-card">
 
                 <GroupsIcon
@@ -192,19 +204,20 @@ export default function AboutUs() {
                 />
 
                 <Typography variant="h6">
-                  Brotherhood
+                  Member Welfare
                 </Typography>
 
                 <Typography>
-                  Strengthen relationships among members.
+                  Respond to members' welfare and legitimate needs
+                  whenever it is reasonable to do so.
                 </Typography>
 
               </Paper>
+
             </Grid>
 
-            <Grid
-              size={{ xs: 12, sm: 6, md: 3 }}
-            >
+            <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+
               <Paper className="objective-card">
 
                 <VolunteerActivismIcon
@@ -213,19 +226,21 @@ export default function AboutUs() {
                 />
 
                 <Typography variant="h6">
-                  Community Service
+                  Community Impact
                 </Typography>
 
                 <Typography>
-                  Improve lives through impactful projects.
+                  Positively impact the lives of the less
+                  privileged through humanitarian and community
+                  development initiatives.
                 </Typography>
 
               </Paper>
+
             </Grid>
 
-            <Grid
-              size={{ xs: 12, sm: 6, md: 3 }}
-            >
+            <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+
               <Paper className="objective-card">
 
                 <WorkspacePremiumIcon
@@ -234,19 +249,21 @@ export default function AboutUs() {
                 />
 
                 <Typography variant="h6">
-                  Excellence
+                  Capacity Building
                 </Typography>
 
                 <Typography>
-                  Promote professionalism and integrity.
+                  Engage professionals to educate, mentor and
+                  broaden members' knowledge and leadership
+                  capacity.
                 </Typography>
 
               </Paper>
+
             </Grid>
 
-            <Grid
-              size={{ xs: 12, sm: 6, md: 3 }}
-            >
+            <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+
               <Paper className="objective-card">
 
                 <PublicIcon
@@ -255,14 +272,17 @@ export default function AboutUs() {
                 />
 
                 <Typography variant="h6">
-                  Global Unity
+                  Professional Networking
                 </Typography>
 
                 <Typography>
-                  Connecting members worldwide.
+                  Encourage members to support one another's
+                  businesses, professions and areas of
+                  specialization.
                 </Typography>
 
               </Paper>
+
             </Grid>
 
           </Grid>
@@ -277,19 +297,26 @@ export default function AboutUs() {
           <Typography
             variant="h3"
             align="center"
-            color="primary"
+            sx={{
+              color: "#111",
+              fontWeight: 700,
+            }}
             gutterBottom
           >
             Why Join Ezienyi Amaka?
           </Typography>
 
           <ul className="why-list">
-            <li>✔ Lifelong friendships and networking.</li>
-            <li>✔ Leadership development opportunities.</li>
-            <li>✔ Community development projects.</li>
-            <li>✔ Welfare and member support.</li>
-            <li>✔ Cultural preservation and promotion.</li>
-            <li>✔ International collaboration.</li>
+            <li>✔ Lifelong brotherhood and genuine friendship.</li>
+            <li>✔ Strong professional and business networking.</li>
+            <li>✔ Meaningful philanthropy and community development.</li>
+            <li>✔ Recreation and quality social activities.</li>
+            <li>✔ Leadership and personal development.</li>
+            <li>✔ Welfare support among members.</li>
+            <li>✔ Capacity-building and professional enlightenment.</li>
+            <li>✔ Preservation of our rich cultural heritage.</li>
+            <li>✔ International networking opportunities.</li>
+            <li>✔ The opportunity to make a lasting positive impact on society.</li>
           </ul>
 
         </Container>

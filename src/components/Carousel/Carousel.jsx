@@ -1,64 +1,112 @@
 import "./Carousel.css";
-
 import { useEffect, useState } from "react";
 
+// Official Club Images
 import hero1 from "../../assets/hero1.webp";
-import membersGroup from "../../assets/members-group-pic.webp";
-import chairman from "../../assets/chairman.webp";
-import viceChairman from "../../assets/vice-chairman.webp";
-import secretary from "../../assets/secretary.webp";
-import financialSecretary from "../../assets/financial-secretary.webp";
-import treasurer from "../../assets/treasurer.webp";
-import welfareChairman from "../../assets/welfare-chairman.webp";
+import chancellorCurrent from "../../assets/emma-chike-nwanju-club-chancellor-2024-till-date.webp";
+// import viceChancellor from "../../assets/vice-chancellor.webp";
+// import secretaryGeneral from "../../assets/secretary-general.webp";
+// import assistantSecretaryGeneral from "../../assets/assistant-secretary-general.webp";
+// import exchequer from "../../assets/exchequer-(financial -secretary).webp";
+// import directorOfWelfare from "../../assets/director-of-welfare.webp";
+// import directorOfDiscipline from "../../assets/director-of-discipline.webp";
+import informationManager from "../../assets/information-manager-(PRO).webp";
+
+import formerChancellor1 from "../../assets/desmond-obisike-club-chancellor-2020-till-2024.webp";
+import formerChancellor2 from "../../assets/ezienyi-paully-ndubueze-club-chancellor-2015-till-2020.webp";
+
+import anniversary from "../../assets/bot-members-pose-on-our-10th-anniversary.webp";
+import membersWithChancellor from "../../assets/bot-members-with-the-chancellor-at-the -centre.webp";
+import crossSection from "../../assets/cross-section-of-members.webp";
+import membersGroup from "../../assets/members-group-image.webp";
+import ihie1 from "../../assets/ihiee-1-of-ezienyi.webp";
+
 import logo from "../../assets/Ezienyiamakainternationalclub-logo.webp";
 
 const slides = [
+  
   {
+
     image: hero1,
+
     title: "Ezienyi Amaka International Club",
+
+  },
+  {
+    image: chancellorCurrent,
+    title: "Club Chancellor (2024 - Present)",
+  },
+  // {
+  //   image: viceChancellor,
+  //   title: "Vice Chancellor",
+  // },
+  // {
+  //   image: secretaryGeneral,
+  //   title: "Secretary-General",
+  // },
+  // {
+  //   image: assistantSecretaryGeneral,
+  //   title: "Assistant Secretary-General",
+  // },
+  // {
+  //   image: exchequer,
+  //   title: "Exchequer (Financial Secretary)",
+  // },
+  {
+    image: informationManager,
+    title: "Information Manager (PRO)",
+  },
+  // {
+  //   image: directorOfWelfare,
+  //   title: "Director of Welfare",
+  // },
+  // {
+  //   image: directorOfDiscipline,
+  //   title: "Director of Discipline",
+  // },
+  {
+    image: formerChancellor1,
+    title: "Club Chancellor (2020 - 2024)",
+  },
+  {
+    image: formerChancellor2,
+    title: "Club Chancellor (2015 - 2020)",
+  },
+  {
+    image: anniversary,
+    title: "10th Anniversary Celebration",
+  },
+  {
+    image: membersWithChancellor,
+    title: "Members with the Chancellor",
+  },
+  {
+    image: crossSection,
+    title: "Cross Section of Members",
   },
   {
     image: membersGroup,
-    title: "Members",
+    title: "Members Group Photograph",
   },
   {
-    image: chairman,
-    title: "Chairman",
-  },
-  {
-    image: viceChairman,
-    title: "Vice Chairman",
-  },
-  {
-    image: secretary,
-    title: "Secretary",
-  },
-  {
-    image: financialSecretary,
-    title: "Financial Secretary",
-  },
-  {
-    image: treasurer,
-    title: "Treasurer",
-  },
-  {
-    image: welfareChairman,
-    title: "Welfare Chairman",
+    image: ihie1,
+    title: "Ihiee of Ezienyi",
   },
   {
     image: logo,
-    title: "Club Logo",
+    title: "Ezienyi Amaka International Club",
   },
 ];
 
 export default function Carousel() {
   const [current, setCurrent] = useState(0);
+
   const total = slides.length;
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % total);
-    }, 4000);
+    }, 4500);
 
     return () => clearInterval(timer);
   }, [total]);
@@ -84,7 +132,7 @@ export default function Carousel() {
             loading={index === 0 ? "eager" : "lazy"}
             fetchPriority={index === 0 ? "high" : "auto"}
             className={
-              index === current
+              current === index
                 ? "carousel-image active"
                 : "carousel-image"
             }
@@ -96,7 +144,7 @@ export default function Carousel() {
       <button
         className="carousel-btn prev"
         onClick={previousSlide}
-        aria-label="Previous"
+        aria-label="Previous Slide"
       >
         ❮
       </button>
@@ -104,7 +152,7 @@ export default function Carousel() {
       <button
         className="carousel-btn next"
         onClick={nextSlide}
-        aria-label="Next"
+        aria-label="Next Slide"
       >
         ❯
       </button>
@@ -116,12 +164,11 @@ export default function Carousel() {
           <button
             key={index}
             className={
-              index === current
+              current === index
                 ? "carousel-dot active"
                 : "carousel-dot"
             }
             onClick={() => setCurrent(index)}
-            aria-label={`Slide ${index + 1}`}
           />
 
         ))}

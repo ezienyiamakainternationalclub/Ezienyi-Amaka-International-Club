@@ -3,10 +3,10 @@ import "./Statistics.css";
 export default function Statistics() {
 
   const stats = [
-    { number: "500+", label: "Members" },
-    { number: "15+", label: "Branches" },
-    { number: "30+", label: "Projects" },
-    { number: "20+", label: "Years" },
+    { number: "50+", label: "Members" },
+    // { number: "15+", label: "Branches" },
+    { number: "10+", label: "Projects" },
+    { number: "10+", label: "Years" },
   ];
 
   return (

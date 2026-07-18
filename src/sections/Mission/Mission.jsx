@@ -1,52 +1,42 @@
 import "./Mission.css";
 import { Container } from "@mui/material";
 
-export default function Mission(){
+export default function Mission() {
+  return (
+    <section className="mission">
+      <Container>
 
-return(
+        <div className="mission-grid">
 
-<section className="mission">
+          <div>
 
-<Container>
+            <h2>Our Mission</h2>
 
-<div className="mission-grid">
+            <p>
+              At Ezienyi Amaka International Club, we champion the welfare of
+              members and give more meaning to life through well-defined
+              philanthropy, recreation and social activities while promoting
+              friendship, unity and brotherhood.
+            </p>
 
-<div>
+          </div>
 
-<h2>Our Mission</h2>
+          <div>
 
-<p>
+            <h2>Our Vision</h2>
 
-To unite members through friendship,
-service, integrity and community
-development while promoting our rich
-cultural heritage globally.
+            <p>
+              To inspire a positive difference and redefine the perception of
+              social clubs by advancing meaningful social impact through
+              partnerships with accomplished personalities from diverse
+              professions and backgrounds.
+            </p>
 
-</p>
+          </div>
 
-</div>
+        </div>
 
-<div>
-
-<h2>Our Vision</h2>
-
-<p>
-
-To become one of Africa's leading
-international clubs known for
-humanitarian service, unity,
-leadership and excellence.
-
-</p>
-
-</div>
-
-</div>
-
-</Container>
-
-</section>
-
-)
-
+      </Container>
+    </section>
+  );
 }

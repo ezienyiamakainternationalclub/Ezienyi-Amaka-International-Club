@@ -1,0 +1,317 @@
+.leadership-header{
+
+padding:170px 20px 100px;
+
+background:linear-gradient(135deg,#0B9B42,#09763B);
+
+text-align:center;
+
+color:white;
+
+}
+
+.leadership-header h2{
+
+font-size:4rem;
+
+margin-bottom:20px;
+
+font-weight:800;
+
+}
+
+.leadership-subtitle{
+
+max-width:760px;
+
+margin:auto;
+
+font-size:1.15rem;
+
+line-height:2;
+
+opacity:.96;
+
+}
+
+/* ===========================
+   GALLERY
+=========================== */
+
+.leadership-section{
+
+padding:100px 0;
+
+background:#fafafa;
+
+}
+
+.leadership-card{
+
+position:relative;
+
+overflow:hidden;
+
+border-radius:22px;
+
+cursor:pointer;
+
+transition:.45s;
+
+background:white;
+
+}
+
+.leadership-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+/* .leadership-card img{
+
+width:100%;
+
+height:340px;
+
+display:block;
+
+object-fit:cover;
+
+transition:.6s;
+
+} */
+.leadership-card img{
+
+width:100%;
+
+height:340px;
+
+display:block;
+
+object-fit:contain;
+
+background:goldenrod;
+
+transition:.6s;
+
+}
+
+
+.leadership-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+/* ===========================
+   GOLD FRAME
+=========================== */
+
+.gold-card{
+
+border:5px solid #d47e37;
+
+box-shadow:
+0 0 0 3px rgba(212,175,55,.22),
+0 18px 45px rgba(212,175,55,.28);
+
+}
+
+/* ===========================
+   GREEN FRAME
+=========================== */
+
+.green-card{
+
+border:4px solid #0B9B42;
+
+box-shadow:
+0 15px 35px rgba(11,155,66,.18);
+
+}
+
+/* ===========================
+   PERMANENT CAPTION
+=========================== */
+
+.leadership-overlay{
+
+position:absolute;
+
+left:0;
+
+right:0;
+
+bottom:0;
+
+padding:22px;
+
+background:linear-gradient(
+transparent,
+rgba(0,0,0,.82)
+);
+
+color:white;
+
+opacity:1;
+
+}
+
+.leadership-overlay h3{
+
+margin:0;
+
+font-size:1.08rem;
+
+font-weight:700;
+
+line-height:1.5;
+
+text-shadow:
+
+0 2px 10px rgba(0,0,0,.55);
+
+}
+
+/* ===========================
+   DIALOG
+=========================== */
+
+.dialog-content{
+
+position:relative;
+
+padding:20px !important;
+
+}
+
+.dialog-image{
+
+width:100%;
+
+max-height:80vh;
+
+object-fit:contain;
+
+border-radius:10px;
+
+}
+
+.close-btn{
+
+position:absolute !important;
+
+top:12px;
+
+right:12px;
+
+background:white !important;
+
+z-index:20;
+
+box-shadow:0 5px 20px rgba(0,0,0,.2);
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1200px){
+
+.leadership-card img{
+
+height:320px;
+
+}
+
+}
+
+@media(max-width:900px){
+
+.leadership-header{
+
+padding-top:145px;
+
+padding-bottom:80px;
+
+}
+
+.leadership-header h2{
+
+font-size:2.7rem;
+
+}
+
+.leadership-subtitle{
+
+font-size:1rem;
+
+line-height:1.8;
+
+}
+
+.leadership-card img{
+
+height:300px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.leadership-section{
+
+padding:70px 0;
+
+}
+
+.leadership-card img{
+
+height:280px;
+
+}
+
+.leadership-overlay{
+
+padding:18px;
+
+}
+
+.leadership-overlay h3{
+
+font-size:1rem;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.leadership-header{
+
+padding:140px 20px 70px;
+
+}
+
+.leadership-header h2{
+
+font-size:2.2rem;
+
+}
+
+.leadership-card{
+
+border-radius:18px;
+
+}
+
+.leadership-card img{
+
+height:260px;
+
+}
+
+}

@@ -1,4 +1,4 @@
-import "./OurProgrammes.css";
+import "./OurProjectsAndActivities.css";
 
 import {
   Container,
@@ -66,7 +66,7 @@ export default function OurProgrammes() {
           fontWeight={700}
           gutterBottom
         >
-          Our Programmes
+         Our Projects and Activities
         </Typography>
 
         <Typography
@@ -74,7 +74,7 @@ export default function OurProgrammes() {
           color="text.secondary"
           sx={{ mb: 6 }}
         >
-          We organize impactful programmes that strengthen unity,
+          We organize impactful activities that strengthen unity,
           promote culture and improve lives.
         </Typography>
 

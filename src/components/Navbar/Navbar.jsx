@@ -22,9 +22,10 @@ import logo from "../../assets/Ezienyiamakainternationalclub-logo.webp";
 
 const navLinks = [
   { name: "Home", path: "/" },
-  { name: "Our Programmes", path: "/our-programmes" },
-  { name: "Members", path: "/gallery" },
+  { name: "Our Projects and Activities", path: "/our-projects-and-activities" },
+  { name: "Leadership", path: "/leadership" },
   { name: "About Us", path: "/about" },
+  // { name: "Constitution", path: "/constitution" },
   { name: "Contact Us", path: "/contactus" },
 ];
 
@@ -53,7 +54,8 @@ export default function Navbar() {
         {/* Announcement Marquee Bar */}
         <div className="announcement-bar">
           <marquee behavior="scroll" direction="left" scrollamount="6">
-            There will be a traditional wedding ceremony of our member who informed us last week. We sincerely congratulate them and pray for a union filled with love, peace, and blessings. All members are encouraged to attend and show support. Date and venue details will be shared shortly. Let us celebrate together! 
+           Welcome to Ezienyi Amaka International Club; "Onuru Ube Nwanne Agbala Oso". General Congress holds every First Saturday of the Month. We champion friendship, philanthropy, recreation and meaningful social impact. Interested in joining? Apply through our Become a Member page.
+          
           </marquee>
         </div>
 

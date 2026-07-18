@@ -8,6 +8,13 @@ padding:120px 0 70px;
 overflow:hidden;
 }
 
+/* .hero :hover{
+  transform:translateX(8px);
+  border-left:6px solid #0B9B42 
+  border-right:6px solid #0B9B42;
+  border-top:6px solid #0B9B42;
+  border-bottom:6px solid #0B9B42; */
+
 .hero-grid{
 display:grid;
 grid-template-columns:1.05fr .95fr;
@@ -135,3 +142,4 @@ font-size:.95rem;
 }
 
 }
+

@@ -1,68 +1,49 @@
 import "./CTA.css";
 
 import { Button, Container } from "@mui/material";
-
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { Link } from "react-router-dom";
 
 export default function CTA() {
+  return (
+    <section className="cta">
+      <Container maxWidth="md">
 
-return (
+        <h2>
+          Become Part of Something Greater
+        </h2>
 
-<section className="cta">
+        <p>
+          Join a growing international community dedicated to friendship,
+          leadership, community development and cultural excellence.
+        </p>
 
-<Container maxWidth="md">
+        <div className="cta-buttons">
 
-<h2>
+          <Button
+            component={Link}
+            to="/becomemember"
+            variant="contained"
+            color="warning"
+            size="large"
+            endIcon={<ArrowForwardIcon />}
+          >
+            Join The Club
+          </Button>
 
-Become Part of Something Greater
+          <Button
+            component={Link}
+            to="/contactus"
+            variant="outlined"
+            color="inherit"
+            size="large"
+          >
+            Contact Us
+          </Button>
 
-</h2>
+        </div>
 
-<p>
-
-Join a growing international community dedicated to friendship,
-leadership, community development and cultural excellence.
-
-</p>
-
-<div className="cta-buttons">
-
-<Button
-
-variant="contained"
-
-color="warning"
-
-size="large"
-
-endIcon={<ArrowForwardIcon/>}
-
->
-
-Join The Club
-
-</Button>
-
-<Button
-
-variant="outlined"
-
-color="inherit"
-
-size="large"
-
->
-
-Contact Us
-
-</Button>
-
-</div>
-
-</Container>
-
-</section>
-
-);
-
+      </Container>
+    </section>
+  );
 }

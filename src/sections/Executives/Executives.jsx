@@ -8,45 +8,72 @@ import {
   Typography,
 } from "@mui/material";
 
-import chairman from "../../assets/chairman.webp";
-import viceChairman from "../../assets/vice-chairman.webp";
-import secretary from "../../assets/secretary.webp";
-import financialSecretary from "../../assets/financial-secretary.webp";
+import chancellor from "../../assets/emma-chike-nwanju-club-chancellor-2024-till-date.webp";
+import viceChancellor from "../../assets/vice-chancellor.webp";
+import secretaryGeneral from "../../assets/secretary-general.webp";
+import assistantSecretaryGeneral from "../../assets/assistant-secretary-general.webp";
+import exchequer from "../../assets/exchequer-(financial -secretary).webp";
 import treasurer from "../../assets/treasurer.webp";
-import welfareChairman from "../../assets/welfare-chairman.webp";
+import informationManager from "../../assets/information-manager-(PRO).webp";
+import directorOfWelfare from "../../assets/director-of-welfare.webp";
+import directorOfDiscipline from "../../assets/director-of-discipline.webp";
 
 const executives = [
   {
-    name: "Chief Chairman",
-    position: "Chairman",
-    image: chairman,
+    name: "Emma Chike Nwanju",
+    position: "Chancellor",
+    image: chancellor,
   },
+
   {
-    name: "Vice Chairman",
-    position: "Vice Chairman",
-    image: viceChairman,
+    name: "Vice-Chancellor",
+    position: "Vice-Chancellor",
+    image: viceChancellor,
   },
+
   {
-    name: "Secretary",
-    position: "Secretary",
-    image: secretary,
+    name: "Secretary-General",
+    position: "Secretary-General",
+    image: secretaryGeneral,
   },
+
   {
-    name: "Financial Secretary",
+    name: "Assistant Secretary-General",
+    position: "Assistant Secretary-General",
+    image: assistantSecretaryGeneral,
+  },
+
+  {
+    name: "Exchequer",
     position: "Financial Secretary",
-    image: financialSecretary,
+    image: exchequer,
   },
+
   {
     name: "Treasurer",
     position: "Treasurer",
     image: treasurer,
   },
+
   {
-    name: "Welfare Chairman",
-    position: "Welfare Chairman",
-    image: welfareChairman,
+    name: "Information Manager",
+    position: "Public Relations Officer (PRO)",
+    image: informationManager,
+  },
+
+  {
+    name: "Director of Welfare",
+    position: "Director of Welfare",
+    image: directorOfWelfare,
+  },
+
+  {
+    name: "Director of Discipline",
+    position: "Director of Discipline",
+    image: directorOfDiscipline,
   },
 ];
+
 
 export default function Executives() {
   return (

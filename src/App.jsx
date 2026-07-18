@@ -1,3 +1,4 @@
+
 // import "./App.css";
 
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -6,8 +7,13 @@
 // import Footer from "./components/Footer/Footer";
 
 // import Home from "./pages/Home/Home";
+
+// // Uncomment after fixing them
 // import AboutUs from "./pages/AboutUs/AboutUs";
-// import Gallery from "./pages/Gallery/Gallery";
+// import Members from "./pages/Members/Members";
+// import ContactUs from "./pages/ContactUs/ContactUs";
+// import BecomeMember from "./pages/BecomeMember/BecomeMember";
+// import OurProgrammes from "./pages/OurProgrammes/OurProgrammes";
 
 // function App() {
 //   return (
@@ -16,27 +22,49 @@
 
 //         <Navbar />
 
-//         <main>
-
+//         <main className="app-main">
 //           <Routes>
 
+//             {/* Home */}
 //             <Route
 //               path="/"
 //               element={<Home />}
 //             />
 
+            
+//             Uncomment after About page is fixed
+
 //             <Route
 //               path="/about"
 //               element={<AboutUs />}
 //             />
+           
+
+            
+//             Uncomment after Members page is fixed
 
 //             <Route
-//               path="/gallery"
-//               element={<Gallery />}
+//               path="/members"
+//               element={<Members />}
+//             />
+           
+//            <Route
+//               path="/contactus"
+//               element={<ContactUs />}
+//             />
+
+//            <Route
+//               path="/becomemember"
+//               element={<BecomeMember />}
+//             />
+ 
+ 
+//           <Route
+//               path="/our-programmes"
+//               element={<OurProgrammes />}
 //             />
 
 //           </Routes>
-
 //         </main>
 
 //         <Footer />
@@ -48,77 +76,80 @@
 
 // export default App;
 
+
 import "./App.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 import Home from "./pages/Home/Home";
-
-// Uncomment after fixing them
 import AboutUs from "./pages/AboutUs/AboutUs";
-import Gallery from "./pages/Gallery/Gallery";
+import Leadership from "./pages/Leadership/Leadership";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import BecomeMember from "./pages/BecomeMember/BecomeMember";
-import OurProgrammes from "./pages/OurProgrammes/OurProgrammes";
-
+import OurProjectsAndActivities from "./pages/OurProjectsAndActivities/OurProjectsAndActivities";
+import Constitution from "./pages/Constitution/Constitution";
 function App() {
   return (
     <BrowserRouter>
+
+      {/* Automatically scrolls every page to the top */}
+      <ScrollToTop />
+
       <div className="app">
 
         <Navbar />
 
         <main className="app-main">
+
           <Routes>
 
-            {/* Home */}
             <Route
               path="/"
               element={<Home />}
             />
 
-            
-            Uncomment after About page is fixed
-
             <Route
               path="/about"
               element={<AboutUs />}
             />
-           
-
-            
-            Uncomment after Gallery page is fixed
 
             <Route
-              path="/gallery"
-              element={<Gallery />}
+              path="/constitution"
+              element={<Constitution />}
             />
-           
-           <Route
+
+            <Route
+              path="/leadership"
+              element={<Leadership />}
+            />
+
+            <Route
               path="/contactus"
               element={<ContactUs />}
             />
 
-           <Route
+            <Route
               path="/becomemember"
               element={<BecomeMember />}
             />
- 
- 
-          <Route
-              path="/our-programmes"
-              element={<OurProgrammes />}
+        
+            <Route
+              path="/our-projects-and-activities"
+              element={<OurProjectsAndActivities />}
             />
 
           </Routes>
+
         </main>
 
         <Footer />
 
       </div>
+
     </BrowserRouter>
   );
 }

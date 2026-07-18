@@ -36,7 +36,32 @@ export default function BecomeMember() {
             color="text.secondary"
             sx={{ mb: 5 }}
           >
-            Complete the form below and one of our executives will contact you.
+            Complete the application below. Submission of this
+form does not guarantee membership. All applications
+are subject to screening and approval in accordance
+with the Constitution of Ezienyi Amaka International
+Club.
+
+{/* Membership Requirements
+
+• Applicant must be at least 35 years old.
+
+• Applicant must be married.
+
+• Applicant must be of good character.
+
+• Applicant must be recommended by two members of the Club.
+
+• Applicant shall undergo screening by the Screening Committee.
+
+• Membership is subject to approval by the General Congress.
+
+• Application Form Fee:
+₦100,000 (Non-refundable)
+
+• Registration Fee after approval:
+₦1,000,000 */}
+
           </Typography>
 
         <div className="form-grid">

@@ -18,18 +18,21 @@ export default function Hero() {
               Welcome To Ezienyi Amaka International Club
             </span>
 
-            <h1>
-              Building Brotherhood,
-              <span> Unity</span> &
-              <span> Global Excellence</span>
-            </h1>
+<h1>
+  Inspiring
+  <span> Brotherhood</span>,
+  <span> Unity</span> &
+  Lasting Social Impact
+</h1>
+            
 
             <p>
-              Ezienyi Amaka International Club promotes brotherhood,
-              community development, cultural heritage,
-              humanitarian service and international collaboration,
-              empowering members to make lasting impacts in society.
-            </p>
+  Ezienyi Amaka International Club brings together accomplished
+  individuals committed to brotherhood, peace, unity and meaningful
+  social impact. Through philanthropy, recreation, cultural heritage,
+  professional collaboration and community development, we strive to
+  positively transform lives locally and internationally.
+</p>
 
             <Stack
               direction={{ xs: "column", sm: "row" }}
