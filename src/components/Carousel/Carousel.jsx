@@ -3,7 +3,11 @@ import { useEffect, useState } from "react";
 
 // Official Club Images
 import hero1 from "../../assets/hero1.webp";
+import anniversary10Years from "../../assets/10-years-aniversery-2015-2025.webp";
+
 import chancellorCurrent from "../../assets/emma-chike-nwanju-club-chancellor-2024-till-date.webp";
+
+// PICTURES ARE NOT AVAILABLE
 // import viceChancellor from "../../assets/vice-chancellor.webp";
 // import secretaryGeneral from "../../assets/secretary-general.webp";
 // import assistantSecretaryGeneral from "../../assets/assistant-secretary-general.webp";
@@ -32,10 +36,17 @@ const slides = [
     title: "Ezienyi Amaka International Club",
 
   },
+  
+ {
+  image: anniversary10Years,
+  title: "10th Anniversary (2015 - 2025)",
+},
+  
   {
     image: chancellorCurrent,
     title: "Club Chancellor (2024 - Present)",
   },
+// PICTURES ARE NOT AVAILABLE
   // {
   //   image: viceChancellor,
   //   title: "Vice Chancellor",

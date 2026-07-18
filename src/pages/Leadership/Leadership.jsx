@@ -31,6 +31,7 @@ import ihie1 from "../../assets/ihiee-1-of-ezienyi.webp";
 
 import formerChancellor2020 from "../../assets/desmond-obisike-club-chancellor-2020-till-2024.webp";
 import formerChancellor2015 from "../../assets/ezienyi-paully-ndubueze-club-chancellor-2015-till-2020.webp";
+import anniversary10Years from "../../assets/10-years-aniversery-2015-2025.webp";
 
 // ================================
 
@@ -112,6 +113,11 @@ const images = [
     image: ihie1,
     title: "Ihie I of Ezienyi",
   },
+
+  {
+  image: anniversary10Years,
+  title: "10th Anniversary (2015 - 2025)",
+},
 ];
 
 export default function Leadership() {

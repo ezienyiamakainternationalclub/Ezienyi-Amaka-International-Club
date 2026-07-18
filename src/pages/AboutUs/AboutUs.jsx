@@ -17,7 +17,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Link } from "react-router-dom";
 
 import members from "../../assets/cross-section-of-members.webp";
-
+// import anniversary10Years from "../../assets/10-years-aniversery-2015-2025.webp";
 export default function AboutUs() {
   return (
     <>
