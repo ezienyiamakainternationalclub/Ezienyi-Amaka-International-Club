@@ -246,6 +246,18 @@ const slides = [
     title: "Happy 66th Nigeria Independence Anniversary",
   },
   {
+    image: independenceLogo,
+    title: "Happy 66th Nigeria Independence Anniversary",
+  },
+  {
+    image: independenceLogo,
+    title: "Happy 66th Nigeria Independence Anniversary",
+  },
+  {
+    image: independenceLogo,
+    title: "Happy 66th Nigeria Independence Anniversary",
+  },
+  {
     image: hero1,
     title: "Ezienyi Amaka International Club",
   },

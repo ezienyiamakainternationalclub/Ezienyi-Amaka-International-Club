@@ -54,8 +54,8 @@ export default function Navbar() {
         {/* Announcement Marquee Bar */}
         <div className="announcement-bar">
           <marquee behavior="scroll" direction="left" scrollamount="6">
-          Happy 66th Independence Anniversary to Nigeria! Ezienyi Amaka International Club wishes all Nigerians a peaceful celebration. Reminder: General Congress holds every First Saturday of the Month. Interested in joining? Visit our Become a Member page.
-           {/* Welcome to Ezienyi Amaka International Club; "Onuru Ube Nwanne Agbala Oso". General Congress holds every First Saturday of the Month. We champion friendship, philanthropy, recreation and meaningful social impact. Interested in joining? Apply through our Become a Member page. */}
+          Happy 66th Independence Anniversary to Nigeria! Vote wisely!  Ezienyi Amaka International Club wishes all Nigerians a peaceful celebration. Reminder: General Congress holds every First Sunday of the Month. Interested in joining? Visit our Become a Member page.
+           {/* Welcome to Ezienyi Amaka International Club; "Onuru Ube Nwanne Agbala Oso". General Congress holds every First Sunday of the Month. We champion friendship, philanthropy, recreation and meaningful social impact. Interested in joining? Apply through our Become a Member page. */}
           
           </marquee>
         </div>
