@@ -26,7 +26,7 @@ const anniversaryPhotos = [
   { src: img8, title: "Guests Session" },
   { src: img9, title: "Award Presentation" },
   { src: img10, title: "10th Anniversary Cake" },
-  { src: img11, title: "Provost with Respected Personalities" },
+  { src: img11, title: "The Chancellor Ezienyi Emma Nwanju Addressing Respected Personalities" },
   { src: img12, title: "Guests Session" },
   { src: img13, title: "Guests Session" },
 ];
