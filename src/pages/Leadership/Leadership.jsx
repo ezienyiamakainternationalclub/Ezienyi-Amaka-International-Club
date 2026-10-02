@@ -15,14 +15,16 @@ import CloseIcon from "@mui/icons-material/Close";
 // ===== IMPORT IMAGES =====
 
 import chancellor2024 from "../../assets/emma-chike-nwanju-club-chancellor-2024-till-date.webp";
-import viceChancellor from "../../assets/vice-chancellor.webp";
-import secretaryGeneral from "../../assets/secretary-general.webp";
-import assistantSecretaryGeneral from "../../assets/assistant-secretary-general.webp";
-import financialSecretary from "../../assets/exchequer-(financial -secretary).webp";
-import directorOfWelfare from "../../assets/director-of-welfare.webp";
-import directorOfDiscipline from "../../assets/director-of-discipline.webp";
-import informationManager from "../../assets/information-manager-(PRO).webp";
-
+// import viceChancellor from "../../assets/vice-chancellor.webp";
+import secretaryGeneral from "../../assets/Ezienyi Iyke Umeh (Secretary-General).jpeg";
+import assistantSecretaryGeneral from "../../assets/Ezienyi Samuel Ihezuonu (Asst. Secretary General).jpeg";
+import financialSecretary from "../../assets/Ezienyi Daniel Onyema (Exchequer).jpeg";
+import treasurer from "../../assets/Ezienyi Uba Christian (Treasurer).jpeg";
+// import directorOfWelfare from "../../assets/director-of-welfare.webp";
+// import directorOfDiscipline from "../../assets/director-of-discipline.webp";
+import informationManager from "../../assets/Ezienyi Obioma Nwaiwu (PRO).jpeg";
+import provost1 from "../../assets/Ezienyi Kyrian Ndum (Provost).jpeg";
+import provost2 from "../../assets/Ezienyi Mathias Nkoku (Provost 2).jpeg";
 import members10thAnniversary from "../../assets/bot-members-pose-on-our-10th-anniversary.webp";
 import membersWithChancellor from "../../assets/bot-members-with-the-chancellor-at-the -centre.webp";
 import crossSectionMembers from "../../assets/cross-section-of-members.webp";
@@ -42,10 +44,10 @@ const images = [
     featured: true,
   },
 
-  {
-    image: viceChancellor,
-    title: "Vice Chancellor",
-  },
+  // {
+  //   image: viceChancellor,
+  //   title: "Vice Chancellor",
+  // },
 
   {
     image: secretaryGeneral,
@@ -68,13 +70,26 @@ const images = [
   },
 
   {
-    image: directorOfWelfare,
-    title: "Director of Welfare",
+    image: provost1,
+    title: "Provost",
   },
-
   {
-    image: directorOfDiscipline,
-    title: "Director of Discipline",
+    image: provost2,
+    title: "provost 2",
+  },
+  
+  // {
+  //   image: directorOfWelfare,
+  //   title: "Director of Welfare",
+  // },
+
+  // {
+  //   image: directorOfDiscipline,
+  //   title: "Director of Discipline",
+  // },
+   {
+    image: treasurer,
+    title: "The Treasurer",
   },
 
   {
