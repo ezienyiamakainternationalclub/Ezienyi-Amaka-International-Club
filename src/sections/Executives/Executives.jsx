@@ -9,69 +9,84 @@ import {
 } from "@mui/material";
 
 import chancellor from "../../assets/emma-chike-nwanju-club-chancellor-2024-till-date.webp";
-import viceChancellor from "../../assets/vice-chancellor.webp";
-import secretaryGeneral from "../../assets/secretary-general.webp";
-import assistantSecretaryGeneral from "../../assets/assistant-secretary-general.webp";
-import exchequer from "../../assets/exchequer-(financial -secretary).webp";
-import treasurer from "../../assets/treasurer.webp";
-import informationManager from "../../assets/information-manager-(PRO).webp";
-import directorOfWelfare from "../../assets/director-of-welfare.webp";
-import directorOfDiscipline from "../../assets/director-of-discipline.webp";
+// import viceChancellor from "../../assets/vice-chancellor.webp";
+import secretaryGeneral from "../../assets/Ezienyi Iyke Umeh (Secretary-General).jpeg";
+import assistantSecretaryGeneral from "../../assets/Ezienyi Samuel Ihezuonu (Asst. Secretary General).jpeg";
+import financialSecretary from "../../assets/Ezienyi Daniel Onyema (Exchequer).jpeg";
+import treasurer from "../../assets/Ezienyi Uba Christian (Treasurer).jpeg";
+import informationManager from "../../assets/Ezienyi Obioma Nwaiwu (PRO).jpeg";
+// import directorOfWelfare from "../../assets/director-of-welfare.webp";
+// import directorOfDiscipline from "../../assets/director-of-discipline.webp";
+import provost1 from "../../assets/Ezienyi Kyrian Ndum (Provost).jpeg";
+import provost2 from "../../assets/Ezienyi Mathias Nkoku (Provost 2).jpeg";
 
 const executives = [
   {
-    name: "Emma Chike Nwanju",
+    name: "Ezienyi Emma Chike Nwanju",
     position: "Chancellor",
     image: chancellor,
   },
 
-  {
-    name: "Vice-Chancellor",
-    position: "Vice-Chancellor",
-    image: viceChancellor,
-  },
+  // {
+  //   name: "Vice-Chancellor",
+  //   position: "Vice-Chancellor",
+  //   image: viceChancellor,
+  // },
 
   {
-    name: "Secretary-General",
+    name: "Ezienyi Iyke Umeh",
     position: "Secretary-General",
     image: secretaryGeneral,
   },
 
   {
-    name: "Assistant Secretary-General",
+    name: "Ezienyi Samuel Ihezuonu",
     position: "Assistant Secretary-General",
     image: assistantSecretaryGeneral,
   },
 
   {
-    name: "Exchequer",
-    position: "Financial Secretary",
-    image: exchequer,
+    name: "Ezienyi Daniel Onyema ",
+    position: "Financial Secretary(Exchequer)",
+    image: financialSecretary,
   },
 
   {
-    name: "Treasurer",
+    name: "Ezienyi Uba Christian",
     position: "Treasurer",
     image: treasurer,
   },
 
   {
-    name: "Information Manager",
+    name: "Ezienyi Obioma Nwaiwu",
     position: "Public Relations Officer (PRO)",
     image: informationManager,
   },
 
-  {
-    name: "Director of Welfare",
-    position: "Director of Welfare",
-    image: directorOfWelfare,
+ {
+    name: "Ezienyi Kyrian Ndum",
+    position: "Provost",
+    image: provost1,
   },
 
   {
-    name: "Director of Discipline",
-    position: "Director of Discipline",
-    image: directorOfDiscipline,
+    name: "Ezienyi Mathias Nkoku",
+    position: "Provost 2",
+    image: provost2,
   },
+
+
+  // {
+  //   name: "Director of Welfare",
+  //   position: "Director of Welfare",
+  //   image: directorOfWelfare,
+  // },
+
+  // {
+  //   name: "Director of Discipline",
+  //   position: "Director of Discipline",
+  //   image: directorOfDiscipline,
+  // },
 ];
 
 
